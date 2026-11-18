@@ -1,0 +1,45 @@
+import type { Comment } from '@/types';
+
+export const DEFAULT_COMMENTS: Comment[] = [
+  {
+    id: 1,
+    name: 'Xenn',
+    comment: 'Desain visual branding-nya berani dan berkelas banget bang! Inspiratif.',
+    avatar_url: null,
+    created_at: new Date(Date.now() - 1000 * 60 * 60 * 15).toISOString(),
+    is_approved: true,
+    is_pinned: true,
+    admin_reply: 'Terima kasih banyak Xenn! Salam sukses buat project kamu juga.',
+    replied_at: new Date(Date.now() - 1000 * 60 * 60 * 14).toISOString(),
+  },
+  {
+    id: 2,
+    name: 'Fandi Pratama',
+    comment: 'Keren banget portfolio SEZKY v4 ini, rapi dan animasi micro-interaction-nya juara!',
+    avatar_url: null,
+    created_at: new Date(Date.now() - 1000 * 60 * 60 * 28).toISOString(),
+    is_approved: true,
+    is_pinned: false,
+    admin_reply: null,
+  },
+  {
+    id: 3,
+    name: 'Alif Kurnia',
+    comment: 'Izin jadikan referensi visual ya kak, sukses selalu untuk studio-nya!',
+    avatar_url: null,
+    created_at: new Date(Date.now() - 1000 * 60 * 60 * 96).toISOString(),
+    is_approved: true,
+    is_pinned: false,
+    admin_reply: null,
+  },
+  {
+    id: 4,
+    name: 'Sarah Wijaya',
+    comment: 'Packaging kopi senja sama nusa skincare-nya estetik parah. Sukses terus!',
+    avatar_url: null,
+    created_at: new Date(Date.now() - 1000 * 60 * 60 * 120).toISOString(),
+    is_approved: true,
+    is_pinned: false,
+    admin_reply: null,
+  },
+];
